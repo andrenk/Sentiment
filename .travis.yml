@@ -5,3 +5,10 @@ jdk:
   - oraclejdk8
 after_success:
   - bash <(curl -s https://codecov.io/bash)
+
+notifications:
+ email:
+  recipients:
+  - andreasnk95@gmail.com
+  on_success: never
+  on_failure: always
